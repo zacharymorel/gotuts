@@ -26,9 +26,11 @@ func main() {
 	fmt.Println(&person{name: "Ann", age: 40})
 
 	f := NewPerson("Jon")
-	fmt.Println(*f)
+	fmt.Println(f)  // returns the address of the struct
+	fmt.Println(*f) // returns the dereferenced pointer of var f
 
-	s := person{name: "Sean", age: 50}
+	// s := person{name: "Sean", age: 50} // short way
+	var s person = person{name: "Sean", age: 50} // long way
 	fmt.Println(s.name)
 
 	sp := &s
