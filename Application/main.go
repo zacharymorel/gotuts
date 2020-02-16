@@ -21,6 +21,7 @@ type News struct {
 // [5]type == array => this is going to have a fixed size
 // []type == slice
 
+// TODO: RELEARN MARSHAL AND UNMARSHAL
 func main() {
 	var s SitemapIndex
 	var n News
