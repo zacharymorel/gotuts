@@ -6,7 +6,7 @@ import "fmt"
 
 func main() {
 	grades := make(map[string]float32)
-	// map is a reference type UNLESS YOU USE go's MAKE()
+	// map is a reference type UNLESS YOU USE go's MAKE() func which will allocate the memory space and init the map
 
 	grades["Timmy"] = 42
 	grades["Jess"] = 92
